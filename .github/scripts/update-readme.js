@@ -6,6 +6,7 @@ const startMarker = '<!-- ISSUES-LIST:START -->';
 const endMarker = '<!-- ISSUES-LIST:END -->';
 const noticeLine = '<!-- 此列表由 GitHub Actions 自动生成，请勿手动修改 -->';
 const readmePath = path.resolve(process.cwd(), 'README.md');
+const backupDir = path.resolve(process.cwd(), 'BACKUP');
 
 function ensureEnv(name) {
   const value = process.env[name];
@@ -21,6 +22,14 @@ function ensureGroup(container, label) {
     container.set(label, []);
   }
   return container.get(label);
+}
+
+function formatDate(dateString) {
+  if (!dateString) {
+    return '';
+  }
+  const iso = new Date(dateString).toISOString();
+  return iso.slice(0, 10);
 }
 
 async function fetchOpenIssues(octokit, owner, repo) {
@@ -49,12 +58,69 @@ function buildIssueSections(issuesByLabel) {
       .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
     for (const issue of sortedIssues) {
-      lines.push(`* [${issue.title}](${issue.html_url})`);
+      lines.push(`* [${issue.title}](${issue.html_url}) (${formatDate(issue.created_at)})`);
     }
   }
 
   lines.push('');
   return lines.join('\n');
+}
+
+function ensureBackupDir() {
+  if (!fs.existsSync(backupDir)) {
+    fs.mkdirSync(backupDir, { recursive: true });
+  }
+}
+
+function sanitizeForFilename(input) {
+  return input
+    .normalize('NFKC')
+    .replace(/\s+/g, '-')
+    .replace(/[\\/:*?"<>|]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-/, '')
+    .replace(/-$/, '')
+    .slice(0, 80);
+}
+
+function buildIssueBackupContent(issue) {
+  const header = [
+    `# ${issue.title}`,
+    '',
+    `- 编号: #${issue.number}`,
+    `- 链接: ${issue.html_url}`,
+    `- 状态: ${issue.state}`,
+    `- 创建时间: ${formatDate(issue.created_at)}`,
+    `- 更新时间: ${formatDate(issue.updated_at)}`,
+    '',
+  ];
+
+  const body = issue.body ? issue.body : '_无正文_';
+  return `${header.join('\n')}${body}\n`;
+}
+
+function syncIssueBackup(issues) {
+  ensureBackupDir();
+
+  for (const issue of issues) {
+    const slug = sanitizeForFilename(issue.title) || 'untitled';
+    const filename = `issue-${issue.number}-${slug}.md`;
+    const filePath = path.join(backupDir, filename);
+    const nextContent = buildIssueBackupContent(issue);
+
+    if (fs.existsSync(filePath)) {
+      try {
+        const previous = fs.readFileSync(filePath, 'utf-8');
+        if (previous === nextContent) {
+          continue;
+        }
+      } catch (error) {
+        console.warn(`读取备份文件 ${filePath} 时出错，将覆盖写入。`, error);
+      }
+    }
+
+    fs.writeFileSync(filePath, nextContent, 'utf-8');
+  }
 }
 
 function updateReadme(sectionContent) {
@@ -95,6 +161,8 @@ async function main() {
 
   const issues = await fetchOpenIssues(octokit, owner, repo);
   console.log(`获取到 ${issues.length} 个开启的 Issue。`);
+
+  syncIssueBackup(issues);
 
   const issuesByLabel = new Map();
 
