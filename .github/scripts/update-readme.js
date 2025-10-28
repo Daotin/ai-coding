@@ -72,6 +72,22 @@ function ensureBackupDir() {
   }
 }
 
+function resetBackupDir() {
+  if (fs.existsSync(backupDir)) {
+    const entries = fs.readdirSync(backupDir);
+    for (const entry of entries) {
+      const target = path.join(backupDir, entry);
+      try {
+        fs.rmSync(target, { recursive: true, force: true });
+      } catch (error) {
+        console.warn(`清理备份目录 ${target} 时出错。`, error);
+      }
+    }
+  } else {
+    fs.mkdirSync(backupDir, { recursive: true });
+  }
+}
+
 function buildBackupFilename(issue) {
   const collapsedTitle = issue.title ? issue.title.replace(/\s+/g, '') : '';
   return `issue-${issue.number}-${collapsedTitle || 'untitled'}.md`;
@@ -94,16 +110,13 @@ function buildIssueBackupContent(issue) {
 }
 
 function syncIssueBackup(issues) {
+  resetBackupDir();
   ensureBackupDir();
 
   for (const issue of issues) {
     const filename = buildBackupFilename(issue);
     const filePath = path.join(backupDir, filename);
     const nextContent = buildIssueBackupContent(issue);
-
-    if (fs.existsSync(filePath)) {
-      continue;
-    }
 
     fs.writeFileSync(filePath, nextContent, 'utf-8');
   }
