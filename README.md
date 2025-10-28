@@ -3,10 +3,6 @@
 <!-- ISSUES-LIST:START -->
 <!-- 此列表由 GitHub Actions 自动生成，请勿手动修改 -->
 
-## 未分类
-
-* [Codex使用技巧](https://github.com/Daotin/ai-coding/issues/26)
-
 ## AI方法论
 
 * [AI赋能前端中后台开发](https://github.com/Daotin/ai-coding/issues/11)
@@ -28,6 +24,7 @@
 
 * [使用json样式设计文件，避免AI生成的页面有一股AI味儿](https://github.com/Daotin/ai-coding/issues/28)
 * [Vibe Coding 工作流LLM模型选择](https://github.com/Daotin/ai-coding/issues/27)
+* [Codex使用技巧](https://github.com/Daotin/ai-coding/issues/26)
 * [【摘录】AI Coding，其实很像做技术管理](https://github.com/Daotin/ai-coding/issues/9)
 * [Andrej Karpathy 的 Vibe Coding 技巧](https://github.com/Daotin/ai-coding/issues/7)
 * [cursor引入外部文档的方式](https://github.com/Daotin/ai-coding/issues/6)
