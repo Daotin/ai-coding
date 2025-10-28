@@ -1,0 +1,12 @@
+{
+  "name": "ai-coding-readme-updater",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "update-readme": "node ./.github/scripts/update-readme.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.1.1"
+  }
+}

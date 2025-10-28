@@ -1,0 +1,46 @@
+name: Auto update README
+
+on:
+  issues:
+    types:
+      - opened
+      - edited
+      - closed
+      - labeled
+      - unlabeled
+
+permissions:
+  contents: write
+  issues: read
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Update README section
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: npm run update-readme
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git commit -m "docs(readme): auto-update issue list"
+            git push
+          else
+            echo "No changes to commit."
+          fi
