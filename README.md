@@ -19,6 +19,9 @@
 
 ## 未分类
 
+* [666666](https://github.com/Daotin/ai-coding/issues/34) (2025-10-28)
+* [5555555](https://github.com/Daotin/ai-coding/issues/33) (2025-10-28)
+* [444](https://github.com/Daotin/ai-coding/issues/32) (2025-10-28)
 * [111](https://github.com/Daotin/ai-coding/issues/29) (2025-10-28)
 
 ## AI方法论
