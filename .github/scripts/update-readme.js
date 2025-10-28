@@ -102,11 +102,42 @@ function buildIssueBackupContent(issue) {
 function syncIssueBackup(issues) {
   ensureBackupDir();
 
+  const existingEntries = fs.readdirSync(backupDir);
+  const filesByIssueNumber = new Map();
+
+  for (const entry of existingEntries) {
+    const match = entry.match(/^issue-(\d+)-/);
+    if (!match) {
+      continue;
+    }
+    const issueNumber = Number(match[1]);
+    if (!filesByIssueNumber.has(issueNumber)) {
+      filesByIssueNumber.set(issueNumber, []);
+    }
+    filesByIssueNumber.get(issueNumber).push(entry);
+  }
+
   for (const issue of issues) {
     const slug = sanitizeForFilename(issue.title) || 'untitled';
     const filename = `issue-${issue.number}-${slug}.md`;
     const filePath = path.join(backupDir, filename);
     const nextContent = buildIssueBackupContent(issue);
+
+    const relatedEntries = filesByIssueNumber.get(issue.number) || [];
+
+    for (const entry of relatedEntries) {
+      if (entry === filename) {
+        continue;
+      }
+      const targetPath = path.join(backupDir, entry);
+      try {
+        fs.unlinkSync(targetPath);
+      } catch (error) {
+        console.warn(`删除旧备份文件 ${targetPath} 时出错。`, error);
+      }
+    }
+
+    filesByIssueNumber.delete(issue.number);
 
     if (fs.existsSync(filePath)) {
       try {
