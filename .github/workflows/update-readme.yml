@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -37,8 +39,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet README.md; then
-            git add README.md
+          git fetch origin
+          git pull --rebase origin main
+          status_output="$(git status --porcelain README.md BACKUP 2>/dev/null)"
+          if [ -n "$status_output" ]; then
+            git add README.md BACKUP
             git commit -m "docs(readme): auto-update issue list"
             git push
           else
