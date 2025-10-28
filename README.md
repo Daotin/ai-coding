@@ -49,6 +49,7 @@
 
 ## AI实战
 
+* [2222](https://github.com/Daotin/ai-coding/issues/30) (2025-10-28)
 * [小红书内容生成器(AI Agent)](https://github.com/Daotin/ai-coding/issues/14) (2025-10-28)
 * [AI+游戏设计](https://github.com/Daotin/ai-coding/issues/13) (2025-10-28)
 * [MCP原理解析及搭建私有组件库MCP](https://github.com/Daotin/ai-coding/issues/10) (2025-10-28)
