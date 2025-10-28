@@ -72,15 +72,9 @@ function ensureBackupDir() {
   }
 }
 
-function sanitizeForFilename(input) {
-  return input
-    .normalize('NFKC')
-    .replace(/\s+/g, '-')
-    .replace(/[\\/:*?"<>|]/g, '')
-    .replace(/-+/g, '-')
-    .replace(/^-/, '')
-    .replace(/-$/, '')
-    .slice(0, 80);
+function buildBackupFilename(issue) {
+  const collapsedTitle = issue.title ? issue.title.replace(/\s+/g, '') : '';
+  return `issue-${issue.number}-${collapsedTitle || 'untitled'}.md`;
 }
 
 function buildIssueBackupContent(issue) {
@@ -102,52 +96,13 @@ function buildIssueBackupContent(issue) {
 function syncIssueBackup(issues) {
   ensureBackupDir();
 
-  const existingEntries = fs.readdirSync(backupDir);
-  const filesByIssueNumber = new Map();
-
-  for (const entry of existingEntries) {
-    const match = entry.match(/^issue-(\d+)-/);
-    if (!match) {
-      continue;
-    }
-    const issueNumber = Number(match[1]);
-    if (!filesByIssueNumber.has(issueNumber)) {
-      filesByIssueNumber.set(issueNumber, []);
-    }
-    filesByIssueNumber.get(issueNumber).push(entry);
-  }
-
   for (const issue of issues) {
-    const slug = sanitizeForFilename(issue.title) || 'untitled';
-    const filename = `issue-${issue.number}-${slug}.md`;
+    const filename = buildBackupFilename(issue);
     const filePath = path.join(backupDir, filename);
     const nextContent = buildIssueBackupContent(issue);
 
-    const relatedEntries = filesByIssueNumber.get(issue.number) || [];
-
-    for (const entry of relatedEntries) {
-      if (entry === filename) {
-        continue;
-      }
-      const targetPath = path.join(backupDir, entry);
-      try {
-        fs.unlinkSync(targetPath);
-      } catch (error) {
-        console.warn(`删除旧备份文件 ${targetPath} 时出错。`, error);
-      }
-    }
-
-    filesByIssueNumber.delete(issue.number);
-
     if (fs.existsSync(filePath)) {
-      try {
-        const previous = fs.readFileSync(filePath, 'utf-8');
-        if (previous === nextContent) {
-          continue;
-        }
-      } catch (error) {
-        console.warn(`读取备份文件 ${filePath} 时出错，将覆盖写入。`, error);
-      }
+      continue;
     }
 
     fs.writeFileSync(filePath, nextContent, 'utf-8');

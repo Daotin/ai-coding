@@ -40,7 +40,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin
+          git add README.md BACKUP || true
+          git stash push --include-untracked --message "pre-sync"
           git pull --rebase origin main
+          git stash pop || true
           status_output="$(git status --porcelain README.md BACKUP 2>/dev/null)"
           if [ -n "$status_output" ]; then
             git add README.md BACKUP
