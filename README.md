@@ -17,6 +17,10 @@
 <!-- ISSUES-LIST:START -->
 <!-- 此列表由 GitHub Actions 自动生成，请勿手动修改 -->
 
+## 未分类
+
+* [111](https://github.com/Daotin/ai-coding/issues/29) (2025-10-28)
+
 ## AI方法论
 
 * [AI赋能前端中后台开发](https://github.com/Daotin/ai-coding/issues/11) (2025-10-28)
