@@ -41,6 +41,7 @@ Todo List：
 - [cursor 引入外部文档的方式](https://github.com/Daotin/ai-coding/issues/6)
 - [Andrej Karpathy 的 Vibe Coding 技巧](https://github.com/Daotin/ai-coding/issues/7)
 - [AI Coding，其实很像做技术管理](https://github.com/Daotin/ai-coding/issues/9)
+- [Codex使用技巧汇总](https://github.com/Daotin/ai-coding/issues/26)
 
 ## AI 提示词
 
