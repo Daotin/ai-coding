@@ -19,10 +19,7 @@
 
 ## 未分类
 
-* [666666](https://github.com/Daotin/ai-coding/issues/34) (2025-10-28)
-* [5555555](https://github.com/Daotin/ai-coding/issues/33) (2025-10-28)
-* [444](https://github.com/Daotin/ai-coding/issues/32) (2025-10-28)
-* [111](https://github.com/Daotin/ai-coding/issues/29) (2025-10-28)
+* [AAA](https://github.com/Daotin/ai-coding/issues/35) (2025-10-28)
 
 ## AI方法论
 
@@ -52,8 +49,6 @@
 
 ## AI实战
 
-* [33333](https://github.com/Daotin/ai-coding/issues/31) (2025-10-28)
-* [2222](https://github.com/Daotin/ai-coding/issues/30) (2025-10-28)
 * [小红书内容生成器(AI Agent)](https://github.com/Daotin/ai-coding/issues/14) (2025-10-28)
 * [AI+游戏设计](https://github.com/Daotin/ai-coding/issues/13) (2025-10-28)
 * [MCP原理解析及搭建私有组件库MCP](https://github.com/Daotin/ai-coding/issues/10) (2025-10-28)
