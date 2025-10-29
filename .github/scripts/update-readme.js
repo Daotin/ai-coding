@@ -98,19 +98,19 @@ function buildBackupFilename(issue) {
 }
 
 function buildIssueBackupContent(issue) {
-  const header = [
-    `# ${issue.title}`,
-    '',
-    `- 编号: #${issue.number}`,
-    `- 链接: ${issue.html_url}`,
-    `- 状态: ${issue.state}`,
-    `- 创建时间: ${formatDate(issue.created_at)}`,
-    `- 更新时间: ${formatDate(issue.updated_at)}`,
+  const tags = (issue.labels || []).map((label) => label.name).filter(Boolean);
+  const yamlFrontMatter = [
+    '---',
+    'layout: post',
+    `title: "${issue.title.replace(/"/g, '\\"')}"`,
+    `date: ${formatDate(issue.created_at)}`,
+    `tags: [${tags.join(', ')}]`,
+    '---',
     '',
   ];
 
   const body = issue.body ? issue.body : '_无正文_';
-  return `${header.join('\n')}${body}\n`;
+  return `${yamlFrontMatter.join('\n')}${body}\n`;
 }
 
 function extractIssueTodos(body) {
