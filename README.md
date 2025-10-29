@@ -36,6 +36,9 @@
 
 ## AI经验
 
+* [todo](https://github.com/Daotin/ai-coding/issues/36) (2025-10-29)
+  - [ ] todo1
+  - [ ] todo2
 * [使用json样式设计文件，避免AI生成的页面有一股AI味儿。](https://github.com/Daotin/ai-coding/issues/28) (2025-10-28)
 * [Vibe Coding 工作流LLM模型选择](https://github.com/Daotin/ai-coding/issues/27) (2025-10-28)
 * [Codex使用技巧](https://github.com/Daotin/ai-coding/issues/26) (2025-10-28)
