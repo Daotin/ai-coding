@@ -45,6 +45,11 @@
 
 ## AI实战
 
+* [todo](https://github.com/Daotin/ai-coding/issues/36) (2025-10-29)
+  - [ ] AI+监控系统：监控大屏中，对于错误，增加 AI 修复建议
+  - [ ] AI+VSCode 插件：自研公司内部 vscode 插件，提效（生成自定义组件，echart，代码辅助等）
+  - [ ] AI+Agent（参考 [NC VSCode IDE](https://mp.weixin.qq.com/s/GwNnkuDvbDDLjp0MHtypQw)）
+  - [ ] AI+自动化测试（参考 [使用 CodeX 调起 Chrome-devtools-mcp 做了其中一个关键场景走查](https://x.com/Stephen4171127/status/1972348138628464813)）
 * [小红书内容生成器(AI Agent)](https://github.com/Daotin/ai-coding/issues/14) (2025-10-28)
 * [AI+游戏设计](https://github.com/Daotin/ai-coding/issues/13) (2025-10-28)
 * [MCP原理解析及搭建私有组件库MCP](https://github.com/Daotin/ai-coding/issues/10) (2025-10-28)
@@ -63,6 +68,10 @@
 
 ## MCP
 
+* [Todo](https://github.com/Daotin/ai-coding/issues/37) (2025-10-29)
+  - [ ] Story MCP：如果你们有 tapd 之类的需求平台，甚至可以自己实现一个 mcp 来让他拉取相对应项目的需求，基于 tapd 上的 story 在本地创建一个 story，做具体的任务拆解，分块完成。
+  - [ ] Story MCP：通过自己开发的 Jira MCP，连接到自己公司的 Jira 服务器，自动获取 bug，自动修复，自动 run dev 验证，自动 commit。
+  - [ ] API MCP：连接后端数据库，做前端 mock 代码生成
 * [自动化操作MCP](https://github.com/Daotin/ai-coding/issues/20) (2025-10-28)
 * [MCP原理解析及搭建私有组件库MCP](https://github.com/Daotin/ai-coding/issues/10) (2025-10-28)
 <!-- ISSUES-LIST:END -->
