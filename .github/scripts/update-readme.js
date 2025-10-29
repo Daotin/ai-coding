@@ -59,6 +59,10 @@ function buildIssueSections(issuesByLabel) {
 
     for (const issue of sortedIssues) {
       lines.push(`* [${issue.title}](${issue.html_url}) (${formatDate(issue.created_at)})`);
+      const todos = extractIssueTodos(issue.body);
+      for (const todo of todos) {
+        lines.push(`  - [ ] ${todo}`);
+      }
     }
   }
 
@@ -107,6 +111,19 @@ function buildIssueBackupContent(issue) {
 
   const body = issue.body ? issue.body : '_无正文_';
   return `${header.join('\n')}${body}\n`;
+}
+
+function extractIssueTodos(body) {
+  if (!body) {
+    return [];
+  }
+
+  return body
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => /^-\s*\[\s\]\s+/.test(line))
+    .map((line) => line.replace(/^-\s*\[\s\]\s+/, '').trim())
+    .filter(Boolean);
 }
 
 function syncIssueBackup(issues) {
