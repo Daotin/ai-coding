@@ -1,10 +1,9 @@
-# 使用json样式设计文件，避免AI生成的页面有一股AI味儿。
-
-- 编号: #28
-- 链接: https://github.com/Daotin/ai-coding/issues/28
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "使用json样式设计文件，避免AI生成的页面有一股AI味儿。"
+date: 2025-10-28
+tags: [AI提示词, AI经验]
+---
 方式1、指定要求AI使用xxx颜色，xxx样式
 
 方式2：如果是模仿其他的网站，可以截图给AI，并使用下面提示词，提取设计样式json

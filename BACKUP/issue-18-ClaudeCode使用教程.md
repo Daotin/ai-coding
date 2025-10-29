@@ -1,10 +1,9 @@
-# Claude Code使用教程
-
-- 编号: #18
-- 链接: https://github.com/Daotin/ai-coding/issues/18
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "Claude Code使用教程"
+date: 2025-10-28
+tags: [AI工具]
+---
 ## 原版使用
 
 > 前提，你得有 **Claude 的付费账号**，或者 **Anthropic API 的付费账号**...至少 Claude 告诉你是这样

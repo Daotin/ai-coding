@@ -1,10 +1,9 @@
-# Figma远程MCP
-
-- 编号: #19
-- 链接: https://github.com/Daotin/ai-coding/issues/19
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "Figma远程MCP"
+date: 2025-10-28
+tags: [AI工具]
+---
 以Cursor为例：
 
 1、添加mcp：

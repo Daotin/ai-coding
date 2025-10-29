@@ -1,10 +1,9 @@
-# 最佳AI开发工作流
-
-- 编号: #16
-- 链接: https://github.com/Daotin/ai-coding/issues/16
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "最佳AI开发工作流"
+date: 2025-10-28
+tags: [AI工具]
+---
 需求调研：google deepreseach
 
 需求讨论：gpt5 extended thinking

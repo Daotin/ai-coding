@@ -1,10 +1,9 @@
-# AI设计网页svg
-
-- 编号: #12
-- 链接: https://github.com/Daotin/ai-coding/issues/12
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "AI设计网页svg"
+date: 2025-10-28
+tags: [AI提示词]
+---
 # 原理
 
 关键要素 = 对象描述 + 技术约束 + 风格参考

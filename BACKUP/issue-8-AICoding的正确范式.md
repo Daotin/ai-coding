@@ -1,10 +1,9 @@
-# AI Coding的正确范式
-
-- 编号: #8
-- 链接: https://github.com/Daotin/ai-coding/issues/8
-- 状态: open
-- 创建时间: 2025-10-27
-- 更新时间: 2025-10-27
+---
+layout: post
+title: "AI Coding的正确范式"
+date: 2025-10-27
+tags: [AI方法论]
+---
 > [!TIP]
 > 相当于用自然语言把代码的执行流程（伪代码粒度）口述出来让AI去照着执行，而不是笼统的一句话描述，然后当甩手掌柜。实际上AI只是单单做了最不重要的Coding这一步。
 > 

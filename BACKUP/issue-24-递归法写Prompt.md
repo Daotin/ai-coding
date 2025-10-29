@@ -1,10 +1,9 @@
-# 递归法写Prompt
-
-- 编号: #24
-- 链接: https://github.com/Daotin/ai-coding/issues/24
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "递归法写Prompt"
+date: 2025-10-28
+tags: [AI提示词]
+---
 如何编写 prompt 才能让大模型更好地理解工具？
 
 这个问题的答案很简单：**让模型来写 Prompt，让模型给你反馈。**

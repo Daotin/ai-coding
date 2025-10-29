@@ -1,10 +1,9 @@
-# 【摘录】AI Coding，其实很像做技术管理
-
-- 编号: #9
-- 链接: https://github.com/Daotin/ai-coding/issues/9
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "【摘录】AI Coding，其实很像做技术管理"
+date: 2025-10-28
+tags: [AI经验]
+---
 > [!TIP]
 > 总结：
 > 1. 梳理需求

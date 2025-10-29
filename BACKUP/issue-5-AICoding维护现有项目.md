@@ -1,10 +1,9 @@
-# AI Coding 维护现有项目
-
-- 编号: #5
-- 链接: https://github.com/Daotin/ai-coding/issues/5
-- 状态: open
-- 创建时间: 2025-10-27
-- 更新时间: 2025-10-27
+---
+layout: post
+title: "AI Coding 维护现有项目"
+date: 2025-10-27
+tags: [AI方法论]
+---
 > [!IMPORTANT]
 > 核心：根据已有的代码，完善之前没有的文档，包括项目的架构，设计文档，技术栈，各种规范等等，目的是引导 AI 走向正轨！
 

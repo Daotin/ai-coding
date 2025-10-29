@@ -1,10 +1,9 @@
-# AI Coding从0到1方法论
-
-- 编号: #2
-- 链接: https://github.com/Daotin/ai-coding/issues/2
-- 状态: open
-- 创建时间: 2025-10-27
-- 更新时间: 2025-10-27
+---
+layout: post
+title: "AI Coding从0到1方法论"
+date: 2025-10-27
+tags: [AI方法论]
+---
 Prompt：（参考 RTF Prompt 格式，具体自行修改）
 
 > 你是一名资深前端专家，擅长现代前端项目的架构设计，前端工程化，以及质量监控和性能优化设计。
