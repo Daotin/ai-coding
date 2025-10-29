@@ -1,10 +1,9 @@
-# UI原型图+设计稿+Vibe Coding
-
-- 编号: #17
-- 链接: https://github.com/Daotin/ai-coding/issues/17
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "UI原型图+设计稿+Vibe Coding"
+date: 2025-10-28
+tags: [AI工具]
+---
 | 工具名称 | 类型 | 简要说明 |
 | --- | --- | --- |
 | **Motiff** | UI 设计稿＋原型图生成 | 使用自然语言或参考图生成高质量 UI 界面，支持 Material/Ant Design 等设计系统样式定制；提供矢量分层与自动布局功能，支持后期编辑和协作 ([Motiff](https://motiff.com/ai?utm_source=chatgpt.com), [prototypr.io](https://prototypr.io/toolbox/motiff-ai?utm_source=chatgpt.com))。 |

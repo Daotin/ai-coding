@@ -1,10 +1,9 @@
-# Andrej Karpathy 的 Vibe Coding 技巧
-
-- 编号: #7
-- 链接: https://github.com/Daotin/ai-coding/issues/7
-- 状态: open
-- 创建时间: 2025-10-27
-- 更新时间: 2025-10-27
+---
+layout: post
+title: "Andrej Karpathy 的 Vibe Coding 技巧"
+date: 2025-10-27
+tags: [AI经验]
+---
 我在探索 LLM 辅助编程最佳体验的道路上更进了一步。我发现，我并没有执着于寻找某一个完美的工具，而是日益将我的工作流程分散到几个不同的工具上，并通过组合使用来取长补短。
 
 **第一层：日常主力（约占 75% 的场景）**

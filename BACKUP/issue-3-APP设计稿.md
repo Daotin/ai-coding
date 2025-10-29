@@ -1,10 +1,9 @@
-# APP设计稿
-
-- 编号: #3
-- 链接: https://github.com/Daotin/ai-coding/issues/3
-- 状态: open
-- 创建时间: 2025-10-27
-- 更新时间: 2025-10-27
+---
+layout: post
+title: "APP设计稿"
+date: 2025-10-27
+tags: [AI提示词]
+---
 ````md
 
 ## 角色

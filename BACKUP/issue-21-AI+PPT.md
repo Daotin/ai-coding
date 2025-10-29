@@ -1,10 +1,9 @@
-# AI+PPT
-
-- 编号: #21
-- 链接: https://github.com/Daotin/ai-coding/issues/21
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "AI+PPT"
+date: 2025-10-28
+tags: [AI提示词]
+---
 帖子：https://x.com/op7418/status/1943609043727310953
 
 藏师傅的动态 PPT 背景设计与动画制作提示词：

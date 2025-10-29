@@ -1,10 +1,9 @@
-# Vibe Coding 工作流LLM模型选择
-
-- 编号: #27
-- 链接: https://github.com/Daotin/ai-coding/issues/27
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "Vibe Coding 工作流LLM模型选择"
+date: 2025-10-28
+tags: [AI经验]
+---
 现在一个Vibe Coding 工作流主要分为需求分析，技术设计，编码，code review，局部优化阶段，整理了下现在每个阶段大家共识的LLM模型选择如下：
 
 1. **首先需要花大量的时间，反复和AI讨论需求，制定方案，做执行步骤等，越细越好，越完整越好，这应该占据整个开发的大部分时间。**

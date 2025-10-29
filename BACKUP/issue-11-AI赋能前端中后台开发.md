@@ -1,10 +1,9 @@
-# AI赋能前端中后台开发
-
-- 编号: #11
-- 链接: https://github.com/Daotin/ai-coding/issues/11
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "AI赋能前端中后台开发"
+date: 2025-10-28
+tags: [AI方法论]
+---
 研发流程的耗时分布统计：
 
 <img width="1080" height="267" alt="Image" src="https://github.com/user-attachments/assets/46b9197b-8656-4bc1-a1dc-bc1c3a92e6d9" />

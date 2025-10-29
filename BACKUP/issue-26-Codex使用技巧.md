@@ -1,10 +1,9 @@
-# Codex使用技巧
-
-- 编号: #26
-- 链接: https://github.com/Daotin/ai-coding/issues/26
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "Codex使用技巧"
+date: 2025-10-28
+tags: [AI经验]
+---
 Codex 官方提示词技巧 
 
 1.提供清晰的代码上下文：在提示中加入函数名、类名或代码片段，帮助 Codex 快速定位相关内容。

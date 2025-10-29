@@ -1,10 +1,9 @@
-# 小红书内容生成器(AI Agent)
-
-- 编号: #14
-- 链接: https://github.com/Daotin/ai-coding/issues/14
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "小红书内容生成器(AI Agent)"
+date: 2025-10-28
+tags: [AI实战]
+---
 ## 需求分析
 
 仓库地址：https://github.com/Daotin/vercel-monorepo-demo/tree/xhs-creator

@@ -1,10 +1,9 @@
-# AI洞察
-
-- 编号: #25
-- 链接: https://github.com/Daotin/ai-coding/issues/25
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "AI洞察"
+date: 2025-10-28
+tags: [AI提示词]
+---
 ```md
 
 

@@ -1,10 +1,9 @@
-# MCP原理解析及搭建私有组件库MCP
-
-- 编号: #10
-- 链接: https://github.com/Daotin/ai-coding/issues/10
-- 状态: open
-- 创建时间: 2025-10-28
-- 更新时间: 2025-10-28
+---
+layout: post
+title: "MCP原理解析及搭建私有组件库MCP"
+date: 2025-10-28
+tags: [AI实战, MCP]
+---
 先看效果展示：
 
 <img width="2048" height="1101" alt="Image" src="https://github.com/user-attachments/assets/186497db-a866-44bc-bc02-313619a0a2e9" />

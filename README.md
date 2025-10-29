@@ -45,7 +45,7 @@
 
 ## AI实战
 
-* [todo](https://github.com/Daotin/ai-coding/issues/36) (2025-10-29)
+* [Todo](https://github.com/Daotin/ai-coding/issues/36) (2025-10-29)
   - [ ] AI+监控系统：监控大屏中，对于错误，增加 AI 修复建议
   - [ ] AI+VSCode 插件：自研公司内部 vscode 插件，提效（生成自定义组件，echart，代码辅助等）
   - [ ] AI+Agent（参考 [NC VSCode IDE](https://mp.weixin.qq.com/s/GwNnkuDvbDDLjp0MHtypQw)）
