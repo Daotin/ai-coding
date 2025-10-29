@@ -36,9 +36,6 @@
 
 ## AI经验
 
-* [todo](https://github.com/Daotin/ai-coding/issues/36) (2025-10-29)
-  - [ ] todo1
-  - [ ] todo2
 * [使用json样式设计文件，避免AI生成的页面有一股AI味儿。](https://github.com/Daotin/ai-coding/issues/28) (2025-10-28)
 * [Vibe Coding 工作流LLM模型选择](https://github.com/Daotin/ai-coding/issues/27) (2025-10-28)
 * [Codex使用技巧](https://github.com/Daotin/ai-coding/issues/26) (2025-10-28)
@@ -48,6 +45,11 @@
 
 ## AI实战
 
+* [todo](https://github.com/Daotin/ai-coding/issues/36) (2025-10-29)
+  - [ ] AI+监控系统：监控大屏中，对于错误，增加 AI 修复建议
+  - [ ] AI+VSCode 插件：自研公司内部 vscode 插件，提效（生成自定义组件，echart，代码辅助等）
+  - [ ] AI+Agent（参考 [NC VSCode IDE](https://mp.weixin.qq.com/s/GwNnkuDvbDDLjp0MHtypQw)）
+  - [ ] AI+自动化测试（参考 [使用 CodeX 调起 Chrome-devtools-mcp 做了其中一个关键场景走查](https://x.com/Stephen4171127/status/1972348138628464813)）
 * [小红书内容生成器(AI Agent)](https://github.com/Daotin/ai-coding/issues/14) (2025-10-28)
 * [AI+游戏设计](https://github.com/Daotin/ai-coding/issues/13) (2025-10-28)
 * [MCP原理解析及搭建私有组件库MCP](https://github.com/Daotin/ai-coding/issues/10) (2025-10-28)
