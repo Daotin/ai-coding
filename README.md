@@ -36,6 +36,7 @@
 
 ## AI经验
 
+* [【转】AI Coding 实践技巧，告诉 AI 如何验证](https://github.com/Daotin/ai-coding/issues/38) (2025-11-03)
 * [使用json样式设计文件，避免AI生成的页面有一股AI味儿。](https://github.com/Daotin/ai-coding/issues/28) (2025-10-28)
 * [Vibe Coding 工作流LLM模型选择](https://github.com/Daotin/ai-coding/issues/27) (2025-10-28)
 * [Codex使用技巧](https://github.com/Daotin/ai-coding/issues/26) (2025-10-28)
