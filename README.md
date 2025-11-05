@@ -56,6 +56,10 @@
 * [MCP原理解析及搭建私有组件库MCP](https://github.com/Daotin/ai-coding/issues/10) (2025-10-28)
 * [自动删除 FG](https://github.com/Daotin/ai-coding/issues/1) (2025-10-27)
 
+## AI思考
+
+* [AI时代，资深工程师的价值在哪里？](https://github.com/Daotin/ai-coding/issues/39) (2025-11-05)
+
 ## AI提示词
 
 * [使用json样式设计文件，避免AI生成的页面有一股AI味儿。](https://github.com/Daotin/ai-coding/issues/28) (2025-10-28)
