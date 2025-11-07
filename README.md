@@ -26,6 +26,7 @@
 
 ## AI工具
 
+* [一文搞懂cursor](https://github.com/Daotin/ai-coding/issues/40) (2025-11-07)
 * [自动化操作MCP](https://github.com/Daotin/ai-coding/issues/20) (2025-10-28)
 * [Figma远程MCP](https://github.com/Daotin/ai-coding/issues/19) (2025-10-28)
 * [Claude Code使用教程](https://github.com/Daotin/ai-coding/issues/18) (2025-10-28)
