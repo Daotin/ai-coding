@@ -2,7 +2,7 @@
 layout: post
 title: "BMAD——基于Spec-kit理念的AI敏捷开发工作流"
 date: 2025-12-01
-tags: [AI方法论]
+tags: [AI方法论, AI思考]
 ---
 ## 什么是 BMAD？
 
