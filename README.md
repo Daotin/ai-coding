@@ -1,6 +1,6 @@
 # 📚 AI Coding
 
-> _<!-- UPDATED_AT --> updated: 2025-12-01 08:45:11 <!-- UPDATED_AT -->_
+> _<!-- UPDATED_AT --> updated: 2025-12-01 17:23:33 <!-- UPDATED_AT -->_
 
 ## 关于本仓库
 
@@ -51,7 +51,6 @@
 
 ## AI实战
 
-* [111](https://github.com/Daotin/ai-coding/issues/43) (2025-12-01)
 * [Todo](https://github.com/Daotin/ai-coding/issues/36) (2025-10-29)
   - [ ] AI+监控系统：监控大屏中，对于错误，增加 AI 修复建议
   - [ ] AI+VSCode 插件：自研公司内部 vscode 插件，提效（生成自定义组件，echart，代码辅助等）
