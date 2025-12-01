@@ -34,13 +34,15 @@ function formatDate(dateString) {
 }
 
 function formatTimestamp(date = new Date()) {
+  // 转换为北京时间 (UTC+8)
+  const beijingTime = new Date(date.getTime() + 8 * 60 * 60 * 1000);
   const pad = (n) => String(n).padStart(2, '0');
-  const year = date.getFullYear();
-  const month = pad(date.getMonth() + 1);
-  const day = pad(date.getDate());
-  const hours = pad(date.getHours());
-  const minutes = pad(date.getMinutes());
-  const seconds = pad(date.getSeconds());
+  const year = beijingTime.getUTCFullYear();
+  const month = pad(beijingTime.getUTCMonth() + 1);
+  const day = pad(beijingTime.getUTCDate());
+  const hours = pad(beijingTime.getUTCHours());
+  const minutes = pad(beijingTime.getUTCMinutes());
+  const seconds = pad(beijingTime.getUTCSeconds());
   return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
 
