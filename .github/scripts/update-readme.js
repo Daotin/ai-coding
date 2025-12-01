@@ -170,8 +170,8 @@ function updateReadme(sectionContent) {
 
   // 更新时间戳
   const timestamp = formatTimestamp();
-  const timestampRegex = new RegExp(`>\\s*\\*${timestampMarker}\\s*updated:\\s*[\\d-]+\\s*[\\d:]*\\s*${timestampMarker}\\*`);
-  const newTimestamp = `> *${timestampMarker} updated: ${timestamp} ${timestampMarker}*`;
+  const timestampRegex = new RegExp(`>\\s*_${timestampMarker}\\s*updated:\\s*[\\d-]+\\s*[\\d:]*\\s*${timestampMarker}_`);
+  const newTimestamp = `> _${timestampMarker} updated: ${timestamp} ${timestampMarker}_`;
 
   if (timestampRegex.test(nextContent)) {
     nextContent = nextContent.replace(timestampRegex, newTimestamp);
