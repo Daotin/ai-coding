@@ -5,6 +5,7 @@ const { Octokit } = require('@octokit/rest');
 const startMarker = '<!-- ISSUES-LIST:START -->';
 const endMarker = '<!-- ISSUES-LIST:END -->';
 const noticeLine = '<!-- 此列表由 GitHub Actions 自动生成，请勿手动修改 -->';
+const timestampMarker = '<!-- UPDATED_AT -->';
 const readmePath = path.resolve(process.cwd(), 'README.md');
 const backupDir = path.resolve(process.cwd(), 'BACKUP');
 
@@ -32,6 +33,17 @@ function formatDate(dateString) {
   return iso.slice(0, 10);
 }
 
+function formatTimestamp(date = new Date()) {
+  const pad = (n) => String(n).padStart(2, '0');
+  const year = date.getFullYear();
+  const month = pad(date.getMonth() + 1);
+  const day = pad(date.getDate());
+  const hours = pad(date.getHours());
+  const minutes = pad(date.getMinutes());
+  const seconds = pad(date.getSeconds());
+  return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+}
+
 async function fetchOpenIssues(octokit, owner, repo) {
   const issues = await octokit.paginate(octokit.rest.issues.listForRepo, {
     owner,
@@ -43,9 +55,7 @@ async function fetchOpenIssues(octokit, owner, repo) {
 }
 
 function buildIssueSections(issuesByLabel) {
-  const sortedLabels = Array.from(issuesByLabel.keys()).sort((a, b) =>
-    a.localeCompare(b, 'zh-Hans', { sensitivity: 'base' }),
-  );
+  const sortedLabels = Array.from(issuesByLabel.keys()).sort((a, b) => a.localeCompare(b, 'zh-Hans', { sensitivity: 'base' }));
 
   const lines = ['', noticeLine];
 
@@ -156,7 +166,16 @@ function updateReadme(sectionContent) {
 
   const before = original.slice(0, startIndex + startMarker.length);
   const after = original.slice(endIndex);
-  const nextContent = `${before}${sectionContent}${after}`;
+  let nextContent = `${before}${sectionContent}${after}`;
+
+  // 更新时间戳
+  const timestamp = formatTimestamp();
+  const timestampRegex = new RegExp(`${timestampMarker}\\s*\\*updated:\\s*[\\d-]+\\s*[\\d:]*\\*\\s*${timestampMarker}`);
+  const newTimestamp = `${timestampMarker} *updated: ${timestamp}* ${timestampMarker}`;
+
+  if (timestampRegex.test(nextContent)) {
+    nextContent = nextContent.replace(timestampRegex, newTimestamp);
+  }
 
   if (nextContent === original) {
     console.log('README.md 内容无变化。');
