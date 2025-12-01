@@ -19,6 +19,7 @@
 
 ## AI方法论
 
+* [BMAD——基于Spec-kit理念的AI敏捷开发工作流](https://github.com/Daotin/ai-coding/issues/42) (2025-12-01)
 * [AI赋能前端中后台开发](https://github.com/Daotin/ai-coding/issues/11) (2025-10-28)
 * [AI Coding的正确范式](https://github.com/Daotin/ai-coding/issues/8) (2025-10-27)
 * [AI Coding 维护现有项目](https://github.com/Daotin/ai-coding/issues/5) (2025-10-27)
