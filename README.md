@@ -1,6 +1,6 @@
 # 📚 AI Coding
 
-> _<!-- UPDATED_AT --> updated: 2025-12-01 17:23:33 <!-- UPDATED_AT -->_
+> _<!-- UPDATED_AT --> updated: 2025-12-15 11:38:33 <!-- UPDATED_AT -->_
 
 ## 关于本仓库
 
@@ -41,6 +41,7 @@
 
 ## AI经验
 
+* [AGENTS.md](https://github.com/Daotin/ai-coding/issues/44) (2025-12-15)
 * [【转】AI Coding 实践技巧，告诉 AI 如何验证](https://github.com/Daotin/ai-coding/issues/38) (2025-11-03)
 * [使用json样式设计文件，避免AI生成的页面有一股AI味儿。](https://github.com/Daotin/ai-coding/issues/28) (2025-10-28)
 * [Vibe Coding 工作流LLM模型选择](https://github.com/Daotin/ai-coding/issues/27) (2025-10-28)
