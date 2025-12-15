@@ -1,6 +1,10 @@
 # 📚 AI Coding
 
+<<<<<<< Updated upstream
 > _<!-- UPDATED_AT --> updated: 2025-12-15 11:38:33 <!-- UPDATED_AT -->_
+=======
+> _<!-- UPDATED_AT --> updated: 2025-12-15 11:38:35 <!-- UPDATED_AT -->_
+>>>>>>> Stashed changes
 
 ## 关于本仓库
 
