@@ -1,7 +1,7 @@
 # 📚 AI Coding
 
 <<<<<<< Updated upstream
-> _<!-- UPDATED_AT --> updated: 2025-12-15 11:38:33 <!-- UPDATED_AT -->_
+> _<!-- UPDATED_AT --> updated: 2025-12-21 10:20:17 <!-- UPDATED_AT -->_
 =======
 > _<!-- UPDATED_AT --> updated: 2025-12-15 11:38:35 <!-- UPDATED_AT -->_
 >>>>>>> Stashed changes
@@ -53,6 +53,10 @@
 * [【摘录】AI Coding，其实很像做技术管理](https://github.com/Daotin/ai-coding/issues/9) (2025-10-28)
 * [Andrej Karpathy 的 Vibe Coding 技巧](https://github.com/Daotin/ai-coding/issues/7) (2025-10-27)
 * [cursor引入外部文档的方式](https://github.com/Daotin/ai-coding/issues/6) (2025-10-27)
+
+## AI科普
+
+* [MCP 和 Agent Skills 的核心区别](https://github.com/Daotin/ai-coding/issues/45) (2025-12-21)
 
 ## AI实战
 
