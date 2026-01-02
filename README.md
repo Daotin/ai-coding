@@ -1,7 +1,7 @@
 # 📚 AI Coding
 
 <<<<<<< Updated upstream
-> _<!-- UPDATED_AT --> updated: 2025-12-21 10:20:17 <!-- UPDATED_AT -->_
+> _<!-- UPDATED_AT --> updated: 2026-01-02 21:43:22 <!-- UPDATED_AT -->_
 =======
 > _<!-- UPDATED_AT --> updated: 2025-12-15 11:38:35 <!-- UPDATED_AT -->_
 >>>>>>> Stashed changes
@@ -72,6 +72,7 @@
 
 ## AI思考
 
+* [对于模糊的需求，可以让 AI 面试你，通过提问的形式一步步形成 SPEC 文档，然后使用该 SPEC 完成需求开发](https://github.com/Daotin/ai-coding/issues/46) (2026-01-02)
 * [AI时代，资深工程师的价值在哪里？](https://github.com/Daotin/ai-coding/issues/39) (2025-11-05)
 
 ## AI提示词
