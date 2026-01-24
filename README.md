@@ -29,6 +29,7 @@
 
 ## AI工具
 
+* [OpenSkills，AI 编程助手的"Forge"](https://github.com/Daotin/ai-coding/issues/47) (2026-01-24)
 * [一文搞懂MCP](https://github.com/Daotin/ai-coding/issues/41) (2025-11-07)
 * [一文搞懂cursor](https://github.com/Daotin/ai-coding/issues/40) (2025-11-07)
 * [自动化操作MCP](https://github.com/Daotin/ai-coding/issues/20) (2025-10-28)
