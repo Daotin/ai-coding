@@ -19,6 +19,10 @@
 <!-- ISSUES-LIST:START -->
 <!-- 此列表由 GitHub Actions 自动生成，请勿手动修改 -->
 
+## 未分类
+
+* [大大怎么不更新啦](https://github.com/Daotin/ai-coding/issues/48) (2026-07-13)
+
 ## AI方法论
 
 * [BMAD——基于Spec-kit理念的AI敏捷开发工作流](https://github.com/Daotin/ai-coding/issues/42) (2025-12-01)
